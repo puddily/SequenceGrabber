@@ -1,4 +1,4 @@
-### Download
+### Download:
 
 Download the latest release [here](https://github.com/Murasagi/SequenceGrabber/releases).
 
