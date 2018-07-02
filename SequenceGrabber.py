@@ -3,6 +3,7 @@ from webparser import GetSequences
 import os
 import sys
 
+
 def IsInteger(x):
     try: int(x)
     except ValueError: return False
@@ -22,13 +23,12 @@ def main():
         #Get userID through argument if it was provided
         userID = sys.argv[1]
     else:
-        print('USAGE: SequenceGrabber.py <User ID>')
+        print('USAGE: SequenceGrabber <User ID>')
         return
     
     #Ensure that the user ID is a number
     if not IsInteger(userID):
         print('User ID must be an integer.')
-        return
 
     userID = int(userID)
 
@@ -42,8 +42,9 @@ def main():
         seqID, title = s
         fileName = ''.join(x for x in f'{seqID} - {title}.mid' if x not in '\/:*?<>|')
         filePath = f'{userID}\\{fileName}'
-        print(f'Downloading {fileName}')
-        DownloadSequence(filePath, seqID)
+        if not os.path.isfile(filePath):
+            print(f'Downloading {fileName}')
+            DownloadSequence(filePath, seqID)
         
 
         
