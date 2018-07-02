@@ -28,6 +28,7 @@ def main():
     #Ensure that the user ID is a number
     if not IsInteger(userID):
         print('User ID must be an integer.')
+        return
 
     userID = int(userID)
 
