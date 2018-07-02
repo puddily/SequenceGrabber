@@ -7,7 +7,7 @@ def GetSequences(userID):
     Returns a list of tuples containing IDs and titles of sequences.
     '''
     sequences = []
-    page = 0;
+    page = 0
     
     while True:
         #Find the Sequences box
