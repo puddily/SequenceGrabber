@@ -15,12 +15,17 @@ def DownloadSequence(filePath, ID):
         f.write(data)
 
 def main():
-    if len(sys.argv) != 2:
+    if len(sys.argv) == 1:
+        #Get userID through input if argument is not provided
+        userID = input('User ID: ')
+    elif len(sys.argv) == 2:
+        #Get userID through argument if it was provided
+        userID = sys.argv[1]
+    else:
         print('USAGE: SequenceGrabber <User ID>')
         return
-
+    
     #Ensure that the user ID is a number
-    userID = sys.argv[1]
     if not IsInteger(userID):
         print('User ID must be an integer.')
 
