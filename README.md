@@ -3,7 +3,7 @@
 Usage: 
 Open SequenceGrabber.py with IDLE or command prompt and enter your User ID to download sequences.
 
-To find your User ID, go to your profile page. It is at the end of the URL bar.
+To find your User ID, go to your profile page. Your User ID is located at the end of the URL bar.
 
 Duplicate sequences are not downloaded.
 
