@@ -1,6 +1,6 @@
 ### Download
 
-Download the latest release [here](https://github.com/Murasagi/SequenceGrabber/releases)
+Download the latest release [here](https://github.com/Murasagi/SequenceGrabber/releases).
 
 ### Usage: 
 Enter your user ID to download your sequences. Your user ID is the number located at the end of the URL bar on your profile page.
