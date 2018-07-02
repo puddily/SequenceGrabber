@@ -1,14 +1,9 @@
 # SequenceGrabber
 
-Usage: 
-Open SequenceGrabber.py with IDLE or command prompt and enter your User ID to download sequences.
+Download the latest release [here](https://github.com/Murasagi/SequenceGrabber/releases)
 
-To find your User ID, go to your profile page. Your User ID is located at the end of the URL bar.
+# Usage: 
+Enter your user ID to download your sequences. Your user ID is the number located at the end of the URL bar on your profile page.
 
-Duplicate sequences are not downloaded.
+Sequences are downloaded to the directory that the program is located in, inside of a subdirectory named after the user that the sequences were downloaded from. Duplicate sequences are not downloaded.
 
-
-
-
-
-Requires Python 3.x. Download the latest version here: https://www.python.org/downloads/
