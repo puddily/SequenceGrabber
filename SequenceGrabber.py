@@ -22,7 +22,7 @@ def main():
         #Get userID through argument if it was provided
         userID = sys.argv[1]
     else:
-        print('USAGE: SequenceGrabber <User ID>')
+        print('USAGE: SequenceGrabber.py <User ID>')
         return
     
     #Ensure that the user ID is a number
