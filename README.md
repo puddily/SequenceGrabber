@@ -1,5 +1,5 @@
 ## SequenceGrabber 
-This program will download all of a user's sequences on [OnlineSequencer](onlinesequencer.net).
+This program will download all of a user's sequences on [OnlineSequencer](https://onlinesequencer.net/).
 
 Sequences are downloaded to the directory that the program is located in, inside of a subdirectory named the User ID you entered. Duplicate sequences are not downloaded.
 
