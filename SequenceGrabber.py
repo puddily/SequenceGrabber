@@ -29,6 +29,7 @@ def main():
     #Ensure that the user ID is a number
     if not IsInteger(userID):
         print('User ID must be an integer.')
+        return
 
     userID = int(userID)
 
@@ -41,7 +42,7 @@ def main():
     for s in sequences:
         seqID, title = s
         fileName = ''.join(x for x in f'{seqID} - {title}.mid' if x not in '\/:*?<>|')
-        filePath = f'{userID}\\{fileName}'
+        filePath = os.path.join(f'{userID}', f'{fileName}')
         if not os.path.isfile(filePath):
             print(f'Downloading {fileName}')
             DownloadSequence(filePath, seqID)
