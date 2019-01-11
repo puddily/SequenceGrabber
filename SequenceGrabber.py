@@ -15,6 +15,12 @@ def DownloadSequence(filePath, ID):
     with open(filePath, 'wb') as f:
         f.write(data)
 
+def CleanFileName(s):
+    '''
+    Removes invalid characters from a file name.
+    '''
+    return ''.join(x for x in s if x not in '<>:"/\\|?*')
+
 def main():
     if len(sys.argv) == 1:
         #Get userID through input if argument is not provided
@@ -41,13 +47,11 @@ def main():
     sequences = GetSequences(userID)
     for s in sequences:
         seqID, title = s
-        fileName = ''.join(x for x in f'{seqID} - {title}.mid' if x not in '\/:*?<>|')
+        fileName = CleanFileName(f'{seqID} - {title}.mid')
         filePath = os.path.join(f'{userID}', f'{fileName}')
         if not os.path.isfile(filePath):
             print(f'Downloading {fileName}')
             DownloadSequence(filePath, seqID)
-        
-
         
 if __name__ == '__main__':
     main()
