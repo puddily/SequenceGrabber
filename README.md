@@ -11,4 +11,10 @@ Download the latest release [here](https://github.com/Murasagi/SequenceGrabber/r
 
 Enter your user ID to download your sequences. Your user ID is the number located at the end of the URL bar on your profile page.
 
-This program was made in Python, and converted to a .exe file using Pyinstaller.
+### Dependencies
+This program was made in Python, and compiled into a .exe file using Pyinstaller. If you would like to modify the program or use the non-compiled version, you will need to install these dependencies:
+
+```
+pip install bs4
+pip install lxml
+```
