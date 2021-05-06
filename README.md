@@ -1,3 +1,6 @@
+## Update 5/6/21
+This project is no longer being maintained, and has not been for a while. Use or modify it as you see fit.
+
 ## SequenceGrabber 
 This program will download all of a user's sequences on [OnlineSequencer](https://onlinesequencer.net/).
 
